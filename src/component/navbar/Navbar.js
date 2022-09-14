@@ -14,23 +14,18 @@ function Navbar() {
         <div className={NavbarCSS.navbarItems}>
           <ul>
             <li>
-              <NavLink to="/" className={NavbarCSS.linkStyles}>
-                Books
+              <NavLink to="/Home" className={NavbarCSS.linkStyles}>
+                Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/reviews" className={NavbarCSS.linkStyles}>
-                Reviews
+              <NavLink to="/add-quote" className={NavbarCSS.linkStyles}>
+                Add Quote
               </NavLink>
             </li>
             <li>
               <NavLink to="/authors" className={NavbarCSS.linkStyles}>
                 Authors
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/categories" className={NavbarCSS.linkStyles}>
-                Categories
               </NavLink>
             </li>
           </ul>
