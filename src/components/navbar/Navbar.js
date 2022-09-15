@@ -14,7 +14,7 @@ function Navbar() {
         <div className={NavbarCSS.navbarItems}>
           <ul>
             <li>
-              <NavLink to="/Home" className={NavbarCSS.linkStyles}>
+              <NavLink to="/" className={NavbarCSS.linkStyles}>
                 Home
               </NavLink>
             </li>
