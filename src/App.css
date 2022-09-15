@@ -1,5 +1,6 @@
 .App {
   text-align: left;
+  background: var(--lightBlue);
 }
 
 .App-logo {
@@ -38,7 +39,7 @@
 } */
 
 section{
-  padding: 2em 1em;
+  padding: 1em;
   width: 100%;
   min-height: calc(100vh - 3.25rem);
 }
