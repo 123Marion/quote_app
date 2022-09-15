@@ -7,7 +7,7 @@ function Comment({ comments }) {
       {comments.map((comment) => (
         <div className={CommentCSS.comment} key={comment.id}>
           <div>
-            <span>{comment.user.name}</span>
+            <span>{!comment.user.name ? "unknown" : comment.user.name}</span>
             <span>{new Date(comment.created_at).toLocaleDateString()}</span>
           </div>
           <div className={CommentCSS.content}>{comment.comment}</div>

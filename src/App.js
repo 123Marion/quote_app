@@ -6,9 +6,9 @@ import Hero from "./components/home/Hero";
 import AddQuote from "./components/quote/AddQuote";
 import ViewQuote from "./components/quote/ViewQuote";
 import { Route, Routes } from "react-router-dom";
+import User from "./components/input/User";
 
 function App() {
-  const [comments, setComments] = useState([]);
   const [quotes, setQuotes] = useState([]);
   const [user, setUser] = useState([]);
 
@@ -28,34 +28,30 @@ function App() {
 
   return (
     <div className="App">
-      {/* {!user ? (
+      {!user ? (
         <User setUser={setUser} />
-      ) : ( */}
-      <>
-        <Navbar />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Hero quotes={quotes} user={user} />}
-          />
-          <Route
-            exact
-            path="/add-quote"
-            element={<AddQuote onAddQuote={handleAddQuote} />}
-          />
-          <Route
-            exact
-            path="/add-comment/:id"
-            element={
-              <ViewQuote
-              user={user}
-              />
-            }
-          />
-        </Routes>
-      </>
-      {/* )} */}
+      ) : (
+        <>
+          <Navbar />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<Hero quotes={quotes} user={user} />}
+            />
+            <Route
+              exact
+              path="/add-quote"
+              element={<AddQuote onAddQuote={handleAddQuote} />}
+            />
+            <Route
+              exact
+              path="/add-comment/:id"
+              element={<ViewQuote user={user} />}
+            />
+          </Routes>
+        </>
+      )}
     </div>
   );
 }

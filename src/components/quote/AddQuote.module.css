@@ -1,19 +1,23 @@
 .buttons button {
-    font-size: 1.125rem;
-    display: inline-block;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    height: 2.5rem;
-    width: 8.25rem;
-    border:1px solid #000;
-    text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.4);
-    /* background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%); */
-    transition: all 0.15s ease;
-  }
+  font-size: 1.125rem;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  height: 2.5rem;
+  width: 8.25rem;
+  border: 1px solid #000;
+  text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.4);
+  /* background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%); */
+  transition: all 0.15s ease;
+}
 
-  .buttons {
-    margin: 2rem;
-  }
+.buttons {
+  margin: 2rem;
+}
+
+.buttons button:hover {
+  transform: translateY(-5px);
+}
