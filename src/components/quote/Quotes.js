@@ -1,7 +1,7 @@
 import QuoteCSS from "./Quotes.module.css";
 import React from "react";
 // import image from "../../logo.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Card() {
   return (
@@ -12,7 +12,11 @@ function Card() {
             <div className={QuoteCSS.quote}>
               <div>
                 <p>hello there i am here</p>
-                <div></div>
+                <div>
+                  <Link to={`/add-comment/1`}>
+                    <div>comment</div>
+                  </Link>
+                </div>
               </div>
               <div>
                 <div>Author</div>
