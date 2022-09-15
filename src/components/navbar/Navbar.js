@@ -9,7 +9,7 @@ function Navbar() {
       {/* navbar  */}
       <nav className={NavbarCSS.navbar}>
         <div className={NavbarCSS.navbarItems + " " + NavbarCSS.logo}>
-          Books' Reviews
+          Quotes
         </div>
         <div className={NavbarCSS.navbarItems}>
           <ul>

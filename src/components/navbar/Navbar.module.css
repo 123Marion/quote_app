@@ -5,8 +5,13 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--lightBlue);
+    /* margin: 1em; */
+
   }
-  
+  .navbarItems{
+    margin: .5em 1em;
+
+  }
   .navbar .navbarItems ul {
     margin: 1em;
   }
@@ -19,7 +24,7 @@
     transition: all 0.3s ease-in-out;
   }
   .navbar .navbarItems li:hover{
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid blue;
     cursor: pointer;
     
   }
@@ -29,7 +34,7 @@
     padding: 0.5rem;
   }
   .navbar .navbarItems li:hover .linkStyles{
-    color: red;
+    color: blue;
   }
   
   .navbarItems.logo {
