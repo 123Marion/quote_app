@@ -14,7 +14,7 @@ function Quotes({ quotes }) {
                 <div>
                   <p>{quote.content}</p>
                   <div>
-                    <Link to={`/add-comment/1`}>
+                    <Link to={`/add-comment/${quote.id}`}>
                       <div>comment</div>
                     </Link>
                   </div>
