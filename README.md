@@ -1,71 +1,70 @@
-# Getting Started with Create React App
+# Quote Review
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***
 
-## Available Scripts
+## Creator
 
-In the project directory, you can run:
+Upload Files Page was created and is maintained by **Charity Wanjiku**
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This website helps in reviewing and rating of Quotes, you click on a quote add a comment and a like then submit.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Contains
 
-### `npm test`
+* all quotes Page
+* a section to like a quote
+* a section to comment quotes
+* Build with :smiling_face_with_three_hearts:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Requirements
 
-### `npm run build`
+* Access to  a computer or any other gadget
+* Access to internet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Setup and installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> To view the website,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* download or fork the repository [Here](https://github.com/123Marion/quote_app) **or**
+* Copy the link <https://github.com/123Marion/quote_app>
 
-### `npm run eject`
+* run npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* run npm server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* download or fork the repository [Here](https://github.com/123Marion/phase-3-sinatra-react-project) **or**
+* Copy the link <https://github.com/123Marion/phase-3-sinatra-react-project>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* run bundle install
 
-## Learn More
+* run rake server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built with
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* React JS - which was used to develop the structure and styling of the User Interface.
+* Ruby Sinatra - which was used as a database for the app.
 
-### Code Splitting
+## Bugs and Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+>Have a bug or issue? Open a new issue here on Github
 
-### Analyzing the Bundle Size
+### Known Bugs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* There are no known bugs
 
-### Making a Progressive Web App
+## Image Attribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+>Images owned by Unsplash
+>Free for personal use with attribution
 
-### Advanced Configuration
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* [Google Fonts](https://fonts.google.com/) - Inter
+* [Unsplash](https://unsplash.com/)
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# quote_app
+> Use it freely but please do not republish, distribute or sell
