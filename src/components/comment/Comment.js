@@ -1,17 +1,18 @@
 import React from "react";
 import CommentCSS from "./Comment.module.css";
-function Comment() {
+function Comment({ comments }) {
+  console.log("Comments all", comments);
   return (
     <>
-      <div className={CommentCSS.comment}>
-        <div>
-            <span>username</span>
-            <span>date posted</span>
+      {comments.map((comment) => (
+        <div className={CommentCSS.comment} key={comment.id}>
+          <div>
+            <span>{comment.user.name}</span>
+            <span>{new Date(comment.created_at).toLocaleDateString()}</span>
+          </div>
+          <div className={CommentCSS.content}>{comment.comment}</div>
         </div>
-        <div className={CommentCSS.content}>
-            content
-        </div>
-      </div>
+      ))}
     </>
   );
 }

@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
 import "./App.css";
 import Hero from "./components/home/Hero";
@@ -18,13 +18,13 @@ function App() {
       .then((quotes) => setQuotes(quotes));
   }, []);
 
-  function handleAddComments(newComments) {
-    setComments([...comments, newComments]);
-  }
+  // function handleAddComments(newComments) {
+  //   setComments([...comments, newComments]);
+  // }
   function handleAddQuote(newQuote) {
     setQuotes([...quotes, newQuote]);
   }
-  console.log("quotes",quotes)
+  console.log("quotes", quotes);
 
   return (
     <div className="App">
@@ -34,12 +34,24 @@ function App() {
       <>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Hero quotes={quotes} user={user}/>} />
-          <Route exact path="/add-quote" element={<AddQuote onAddQuote={handleAddQuote} />} />
+          <Route
+            exact
+            path="/"
+            element={<Hero quotes={quotes} user={user} />}
+          />
+          <Route
+            exact
+            path="/add-quote"
+            element={<AddQuote onAddQuote={handleAddQuote} />}
+          />
           <Route
             exact
             path="/add-comment/:id"
-            element={<ViewQuote onAddComment={handleAddComments} />}
+            element={
+              <ViewQuote
+              user={user}
+              />
+            }
           />
         </Routes>
       </>
