@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -24,7 +24,7 @@
   color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +35,47 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+section{
+  padding: 2em 1em;
+  width: 100%;
+  min-height: calc(100vh - 3.25rem);
+}
+
+.columns{
+  width: 100%;
+  display: flex;
+}
+
+.columns.is-multiline{
+  flex-wrap: wrap;
+}
+.section.hero-body .columns{
+  display:flex;
+  align-items: center;
+}
+.column.is-2{
+  width: 20.4%;
+}
+.column.is-3{
+  width: 33.4%;
+}
+.column.is-4{
+  width:25.4%
+}
+.column.is-5{
+  width:41.7%
+}
+.column.is-6{
+  width:50%
+}
+.column.is-7{
+  width:58.3%
+}
+.column.is-8{
+  width: 66.7%;
+}
+.column.is-12{
+  width: 100%;
 }
