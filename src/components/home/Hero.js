@@ -3,7 +3,7 @@ import HeroCSS from "./Hero.module.css";
 import React from "react";
 import Quotes from "../quote/Quotes";
 
-function Hero() {
+function Hero({quotes, user}) {
   return (
     <>
         <header className={HeroCSS.section + " " + HeroCSS.hero}>
@@ -19,7 +19,7 @@ function Hero() {
           </div>
         </header>
       <section className={HeroCSS.section}>
-        <Quotes />
+        <Quotes quotes={quotes}/>
       </section>
     </>
   );
