@@ -1,0 +1,22 @@
+.section {
+  padding: 3em 4em 0;
+  width: 100%;
+  min-height: calc(100vh - 6.25rem);
+  background-color: var(--lightBlue);
+  background-position: center;
+}
+
+.image {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  border-radius: 5em 0px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 10rem;
+}
+
