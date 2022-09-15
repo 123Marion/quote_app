@@ -13,6 +13,7 @@ This website helps in reviewing and rating of Quotes, you click on a quote add a
 ### Contains
 
 * all quotes Page
+* add quotes
 * a section to like a quote
 * a section to comment quotes
 * Build with :smiling_face_with_three_hearts:

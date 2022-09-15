@@ -24,11 +24,11 @@ function App() {
   function handleAddQuote(newQuote) {
     setQuotes([...quotes, newQuote]);
   }
-  console.log("quotes", quotes);
+  console.log("owner", user);
 
   return (
     <div className="App">
-      {!user ? (
+      {user.length<=0 ? (
         <User setUser={setUser} />
       ) : (
         <>
