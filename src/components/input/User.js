@@ -17,7 +17,7 @@ function User({ setUser }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: input,
+          name: input,
         }),
       })
         .then((r) => r.json())

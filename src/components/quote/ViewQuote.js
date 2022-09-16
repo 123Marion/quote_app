@@ -22,9 +22,9 @@ function ViewQuote({ user }) {
     }
   }, [quote.comments]);
 
-  // function onAddComment(newComments) {
-  //   setComments([...comments, newComments]);
-  // }
+  function onAddComment(newComments) {
+    setComments([...comments, newComments]);
+  }
 
   const [body, setBody] = useState("");
   function handleSubmit(e) {
@@ -41,10 +41,13 @@ function ViewQuote({ user }) {
         body: JSON.stringify({
           user_id: user.id,
           comment: body,
+          quote_id: id,
+          like: true,
         }),
       })
         .then((r) => r.json())
         .then((newComment) => {
+          onAddComment(newComment);
           console.log(newComment);
           setBody("");
         });
@@ -63,7 +66,7 @@ function ViewQuote({ user }) {
             <div></div>
           </div>
           <div>
-            <div>{quote.author}</div>
+            <div>{!quote.author ? "unknown" : quote.author}</div>
             <div>
               <em>{new Date(quote.created_at).toLocaleDateString()}</em>
             </div>
@@ -71,15 +74,16 @@ function ViewQuote({ user }) {
         </div>
       </div>
 
-      <form className="new-message" onSubmit={handleSubmit}>
+      <form className={ViewQuoteCSS.newComment} onSubmit={handleSubmit}>
         <input
+          id="body"
           type="text"
           name="body"
           autoComplete="off"
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />
-        <button type="submit">Send</button>
+        <button type="submit">Comment</button>
       </form>
       <Comment comments={comments} />
     </section>
