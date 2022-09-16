@@ -1,6 +1,8 @@
 .input {
     margin: 1.25rem 0 0;
-    padding: 0 1.875rem;
+    background-color: #25316D;
+    border-radius: 15px;
+    padding: 10px;
     position: relative;
   }
   
@@ -10,7 +12,7 @@
     width: 100%;
     border: none;
     background: transparent;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
     padding: 0.625rem 0.625rem;
   }
   
@@ -19,7 +21,7 @@
   }
   
   .input label {
-    color: #999;
+    color:aqua ;
     font-size: 0.9375rem;
     font-weight: normal;
     position: absolute;
@@ -88,4 +90,6 @@
       background: transparent;
     }
   }
-  
+  .add-quote{
+    background-color: aqua;
+  }

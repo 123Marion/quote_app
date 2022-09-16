@@ -62,7 +62,7 @@ function AddQuote({ onAddQuote }) {
         />
 
         <div className={AddQuoteCSS.buttons}>
-          <button type="submit">Send</button>
+          <button className="add-quote" type="submit">Send</button>
         </div>
       </form>
     </section>

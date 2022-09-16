@@ -38,12 +38,26 @@
   }
 } */
 
+
 section{
   padding: 1em;
   width: 100%;
   min-height: calc(100vh - 3.25rem);
 }
 
+.comment-quote{
+  border-radius: 5px;
+  background-color:#61dafb ;
+  padding:7px 10px;
+  border: none;
+}
+.author{
+  list-style: none;
+  line-height: 40px;font-weight: bold;
+  text-align: center;
+  color: #25316D;
+
+}
 .columns{
   width: 100%;
   display: flex;
@@ -79,4 +93,5 @@ section{
 }
 .column.is-12{
   width: 100%;
+  color: #25316D;
 }

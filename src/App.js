@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
 import "./App.css";
 import Hero from "./components/home/Hero";
+import Author from "./components/author/author"
 import AddQuote from "./components/quote/AddQuote";
 import ViewQuote from "./components/quote/ViewQuote";
 import { Route, Routes } from "react-router-dom";
@@ -38,6 +39,11 @@ function App() {
               exact
               path="/"
               element={<Hero quotes={quotes} user={user} />}
+            />
+            <Route
+              exact
+              path="/authors"
+              element={<Author quotes={quotes} />}
             />
             <Route
               exact

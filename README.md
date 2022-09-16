@@ -28,7 +28,7 @@ This website helps in reviewing and rating of Quotes, you click on a quote add a
 > To view the website,
 
 * download or fork the repository [Here](https://github.com/123Marion/quote_app) **or**
-* Copy the link <https://github.com/123Marion/quote_app>
+* Copy the link <https://github.com/NgochoCharity/Quote_app>
 
 * run npm install
 
@@ -37,7 +37,7 @@ This website helps in reviewing and rating of Quotes, you click on a quote add a
 #### backend
 
 * download or fork the repository [Here](https://github.com/123Marion/phase-3-sinatra-react-project) **or**
-* Copy the link <https://github.com/123Marion/phase-3-sinatra-react-project>
+* Copy the link <https://github.com/NgochoCharity/phase-3-sinatra-react-project>
 
 * run bundle install
 

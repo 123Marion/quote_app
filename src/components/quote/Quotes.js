@@ -15,7 +15,7 @@ function Quotes({ quotes }) {
                   <p>{quote.content}</p>
                   <div>
                     <Link to={`/add-comment/${quote.id}`}>
-                      <div>comment</div>
+                      <button className="comment-quote">comment</button>
                     </Link>
                   </div>
                 </div>
