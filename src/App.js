@@ -14,7 +14,7 @@ function App() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9292/quotes")
+    fetch("https://secret-oasis-36643.herokuapp.com/quotes")
       .then((r) => r.json())
       .then((quotes) => setQuotes(quotes));
   }, []);

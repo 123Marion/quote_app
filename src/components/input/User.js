@@ -11,7 +11,7 @@ function User({ setUser }) {
     //not send whitespace to db
     if (input != null && input.trim() !== "") {
       // setUser(input)
-      fetch("http://localhost:9292/users", {
+      fetch("https://secret-oasis-36643.herokuapp.com/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

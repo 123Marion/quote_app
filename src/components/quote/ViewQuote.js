@@ -33,7 +33,7 @@ function ViewQuote({ user }) {
     console.log(e.target.body.value);
     //not send whitespace to db
     if (body != null && body.trim() !== "") {
-      fetch("http://localhost:9292/comments", {
+      fetch("https://secret-oasis-36643.herokuapp.com/comments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

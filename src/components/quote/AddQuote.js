@@ -17,7 +17,7 @@ function AddQuote({ onAddQuote }) {
     console.log(e.target.content.value);
     //not send whitespace to db
     if (input.content != null && input.content.trim() !== "") {
-      fetch("http://localhost:9292/quotes", {
+      fetch("https://secret-oasis-36643.herokuapp.com/quotes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
