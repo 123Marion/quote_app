@@ -39,6 +39,8 @@ This website helps in reviewing and rating of Quotes, you click on a quote add a
 * download or fork the repository [Here](https://github.com/123Marion/phase-3-sinatra-react-project) **or**
 * Copy the link <https://github.com/NgochoCharity/phase-3-sinatra-react-project>
 
+* API link <https://secret-oasis-36643.herokuapp.com/quotes>
+
 * run bundle install
 
 * run rake server
